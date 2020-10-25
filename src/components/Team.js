@@ -16,18 +16,21 @@ const Team = forwardRef(({ name }, ref) => {
     const teamStyle = {
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'yellow',
-        margin: '5px',
+        //backgroundColor: 'yellow',
         width: '50%',
         height: '100%',
+        margin: '2px',
+        padding: '5px',
         alignItems: 'center',
-        justifyContent: 'space-evenly'
+        justifyContent: 'space-evenly',
+        borderRadius: '7px',
+        border: '1px solid #7D82B8'
     }
 
     const pairedButtons = {
         display: 'flex',
         flexDirection: 'row',
-        backgroundColor: 'orange',
+        //backgroundColor: 'orange',
         justifyContent: 'center',
         width: '100%',
         height: '14%',
@@ -35,7 +38,7 @@ const Team = forwardRef(({ name }, ref) => {
     }
 
     const teamName = {
-        fontSize: '30px'
+        fontSize: '35px'
     }
 
     const generateButtons = () => {
@@ -53,7 +56,7 @@ const Team = forwardRef(({ name }, ref) => {
 
     return (
         <div style={teamStyle}>
-            <h3 style={teamName}>{name}</h3>
+            <span style={teamName}>{name}</span>
             <ScoreLabel score={score} />
             {generateButtons()}
         </div>

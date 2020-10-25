@@ -9,7 +9,7 @@ const ScoreButton = ({ value, incrementBy }) => {
     const buttonPress = () => revertMode ? incrementBy(-value) : incrementBy(value)
 
     return (
-        <Button className="scoreButton" variant="outline-primary" onClick={buttonPress}>{value}</Button>
+        <Button className="scoreButton" variant="outline-primary" onClick={buttonPress}><span>{value}</span></Button>
     )
 }
 

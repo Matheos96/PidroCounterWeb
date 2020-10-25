@@ -9,7 +9,12 @@ const RevertButton = () => {
     const toggle = () => setRevertMode(!revertMode)
 
     return (
-        <Button className="bigButton" onClick={toggle} variant={revertMode ? 'outline-danger' : 'outline-info'}>{revertMode ? 'Håla' : 'Normal'}</Button>
+        <Button 
+            className="bigButton" 
+            onClick={toggle} 
+            variant={revertMode ? 'danger' : 'info'}>
+                <span>{revertMode ? 'Håla' : 'Normal'}</span>
+        </Button>
     )
 }
 

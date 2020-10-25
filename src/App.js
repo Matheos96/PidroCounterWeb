@@ -15,8 +15,6 @@ const App = () => {
     <GameProvider>
       <div className="appWrapper">
 
-        <h1>Pidro Counter</h1>
-
         <div className="teamsContainer">
           <Team ref={weRef} name='Vi' />
           <Team ref={theyRef} name='De' />

@@ -11,9 +11,9 @@ const ResetButton = ({weTeam, theyTeam}) => {
     return (
         <Button 
             className="bigButton" 
-            variant="outline-warning" 
+            variant="warning" 
             onClick={resetScores}>
-                Reset
+                <span>Återställ</span>
         </Button>
     )
 }
