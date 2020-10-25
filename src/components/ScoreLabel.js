@@ -4,10 +4,11 @@ const ScoreLabel = ({ score }) => {
 
     const style = {
         display: 'flex',
-        width: '100%',
-        fontSize: '50px',
+        fontSize: '2.5rem',
         fontWeight: 'bold',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        margin: 0,
+        padding: 0
         
     }
 

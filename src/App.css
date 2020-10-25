@@ -3,7 +3,7 @@
     height: 100%;
     background-color: #B3DEE2;
     /*background-color: red;*/
-    margin: auto;
+    margin: 0;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -11,29 +11,36 @@
   
 .scoreButton {
     width: 47%;
-    height: 100%;
-    margin: 2px;   
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
 }
+
 .scoreButton span {
-    font-size: 35px;
+    font-size: 1.06rem;
 }
   
 .bigButton {
     width: 95%;
     height: 8%;
-    margin: 3px;
 }
 
 .bigButton span {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .teamsContainer {
     display: flex;
     flex-direction: row;
     /*background-color: blue;*/
-    width: 100%;
-    height: 70%;
+    width: 95%;
     justify-content: space-evenly;
-    margin-bottom: 10px;
+}
+
+/*Disable some bootstrap css*/
+.btn-outline-primary:hover {
+    color:#007bff !important;
+    background-color:#B3DEE2 !important;
+}
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+    box-shadow: none !important;
 }

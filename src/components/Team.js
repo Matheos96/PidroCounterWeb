@@ -18,13 +18,15 @@ const Team = forwardRef(({ name }, ref) => {
         flexDirection: 'column',
         //backgroundColor: 'yellow',
         width: '50%',
-        height: '100%',
-        margin: '2px',
-        padding: '5px',
+        padding: '0.1rem',
+        marginLeft: '0.1rem',
+        marginRight: '0.1rem',
+        marginTop: 0,
+        marginBottom: 0,
         alignItems: 'center',
-        justifyContent: 'space-evenly',
-        borderRadius: '7px',
-        border: '1px solid #7D82B8'
+        justifyContent: 'space-between',
+        borderRadius: '0.5rem',
+        border: '0.1rem solid #7D82B8'
     }
 
     const pairedButtons = {
@@ -33,12 +35,13 @@ const Team = forwardRef(({ name }, ref) => {
         //backgroundColor: 'orange',
         justifyContent: 'center',
         width: '100%',
-        height: '14%',
-        margin: '2px'
+        margin: '0.2rem'
     }
 
     const teamName = {
-        fontSize: '35px'
+        fontSize: '2.3rem',
+        padding: 0,
+        margin: 0
     }
 
     const generateButtons = () => {
